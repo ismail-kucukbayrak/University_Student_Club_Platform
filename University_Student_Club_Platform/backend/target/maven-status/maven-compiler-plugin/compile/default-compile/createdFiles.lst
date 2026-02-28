@@ -1,0 +1,8 @@
+app\repositories\repository.class
+app\services\service.class
+app\zmodel\Student.class
+app\BackendApplication.class
+app\zmodel\Club.class
+app\controllers\controller.class
+app\zmodel\Member.class
+app\zmodel\Announcement.class
