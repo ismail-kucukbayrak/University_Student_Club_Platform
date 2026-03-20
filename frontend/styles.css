@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dbdbdb;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #0091ff;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #005ca2;
+}
+
+.btn-secondary {
+    background-color: #555555;
+}
+.btn-secondary:hover {
+    background-color: #080808;
+}
+
+#mainMenu button,
+.form-container button,
+.panelBtn,
+#studentHome > div > button,
+#btnStudentBack {
+    width: 220px;
+}
+
+#mainMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#mainMenu button {
+    margin: 10px 0;
+}
+
+.form-container {
+    margin-top: 30px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 280px;
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+#authPanel {
+    margin-top: 30px;
+}
+
+#panelButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#listArea,
+#studentListAreaWrapper {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+    width: auto;              
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    font-size: 14px;
+    text-align: left;
+    white-space: nowrap;      
+}
+
+th {
+    background-color: #a9a7a7;
+    font-weight: bold;
+}
+
+td:nth-child(3) {
+    white-space: normal;
+    max-width: 600px;
+}
+
+table button {
+    width: auto;              
+    padding: 6px 14px;
+    font-size: 14px;
+}
+
+.btn-back {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+
+    width: auto;
+    padding: 8px 14px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+#authPanel .btn-back {
+    width: 220px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YTU Club System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>YTU Club System</h1>
+
+    <!-- Main menu -->
+    <div id="mainMenu">
+        <button id="btnLogin">Login</button>
+        <button id="btnRegister">Register</button>
+        <button id="btnAuth" class="btn-auth">Authority Login</button>
+    </div>
+
+    <!-- Student Login Form -->
+    <div id="loginForm" class="form-container" style="display:none;">
+        <h2>Login</h2>
+
+        <input type="text" id="loginUserId" placeholder="Username">
+        <input type="password" id="loginPassword" placeholder="Password">
+
+        <button id="btnLoginSubmit">Login</button>
+        <button id="btnLoginBack" class="btn-secondary btn-back">Back</button>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="registerForm" class="form-container" style="display:none;">
+        <h2>Register</h2>
+
+        <input type="text" id="regUserId" placeholder="Username">
+        <input type="password" id="regPassword" placeholder="Password">
+        <input type="password" id="regPassword2" placeholder="Password (repeat)">
+        <input type="text" id="regFname" placeholder="First Name">
+        <input type="text" id="regLname" placeholder="Last Name">
+        <input type="text" id="regPhone" placeholder="Phone">
+
+        <button id="btnSubmitRegister">Complete Registration</button>
+        <button id="btnBack" class="btn-secondary btn-back">Back</button>
+    </div>
+
+    <!-- Authority Login Form -->
+    <div id="authForm" class="form-container" style="display:none;">
+        <h2>Authority Login</h2>
+
+        <input type="text" id="authId" placeholder="Authority ID">
+        <input type="password" id="authPassword" placeholder="Password">
+
+        <button id="btnAuthLogin">Login</button>
+        <button id="btnBack2" class="btn-secondary btn-back">Back</button>
+    </div>
+
+    <!-- Student Home Page -->
+    <div id="studentHome" style="display:none; margin-top:80px;">
+        <!-- Student action buttons -->
+        <div style="display:flex; flex-direction:column; align-items:center; gap:10px; margin-bottom:20px;">
+            <button id="btnMyClubs">My Clubs</button>
+            <button id="btnListAllClubs">List All Clubs</button>
+            <button id="btnDeleteAccount">Delete Account</button>
+        </div>
+        <!-- Back button -->
+        <button id="btnStudentBack" class="btn-secondary btn-back">Logout</button>
+        <!-- Student list area -->
+        <div id="studentListAreaWrapper">
+            <div id="studentListArea"></div>
+        </div>
+        
+    </div>
+
+    <!-- Authority Panel -->
+    <div id="authPanel" style="display:none; margin-top:30px;">
+        <h2>Admin Panel</h2>
+
+        <div id="panelButtons">
+            <button id="btnAddClub" class="panelBtn">Add Club</button>
+            <button id="btnListClubs" class="panelBtn">List Clubs</button>
+            <button id="btnListStudents" class="panelBtn">List Students</button>
+            <button id="btnAuthBack" class="btn-secondary btn-back">Logout</button>
+        </div>
+
+        <!-- Add Club Form -->
+        <div id="addClubForm" class="form-container" style="display:none;">
+            <h2>Add New Club</h2>
+
+            <input type="text" id="clubName" placeholder="Club Name">
+            <textarea id="clubInfo" placeholder="Club Information" rows="4"></textarea>
+
+            <button id="btnSubmitClub">Save</button>
+            <button id="btnCancelAddClub" class="btn-secondary">Cancel</button>
+        </div>
+
+        <!-- Add Announcement Form -->
+        <div id="announcementForm" class="form-container" style="display:none;">
+            <h2>Add Announcement</h2>
+
+            <textarea id="announcementText" placeholder="Announcement text" rows="4"></textarea>
+
+            <button id="btnSaveAnnouncement">Save</button>
+            <button id="btnCancelAnnouncement" class="btn-secondary">Cancel</button>
+        </div>
+
+        <!-- List area -->
+        <div id="listArea"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
