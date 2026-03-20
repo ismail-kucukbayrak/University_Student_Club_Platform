@@ -277,9 +277,9 @@ RETURNS TABLE (
 LANGUAGE plpgsql AS $$
 BEGIN
     RETURN QUERY
-    SELECT userid, fname, lname, phone
-    FROM student
-    WHERE userid = p_userid;
+    SELECT s.userid, s.fname, s.lname, s.phone
+    FROM student s
+    WHERE s.userid = p_userid;
 END;
 $$;
 
@@ -314,8 +314,8 @@ RETURNS TABLE (
 LANGUAGE plpgsql AS $$
 BEGIN
     RETURN QUERY
-    SELECT id, name, info
-    FROM club;
+    SELECT c.id, c.name, c.info
+    FROM club c;
 END;
 $$;
 
@@ -387,8 +387,8 @@ RETURNS TABLE (
 LANGUAGE plpgsql AS $$
 BEGIN
     RETURN QUERY
-    SELECT userid, fname, lname, phone
-    FROM student;
+    SELECT s.userid, s.fname, s.lname, s.phone
+    FROM student s;
 END;
 $$;
 
@@ -417,3 +417,7 @@ BEGIN
     RETURN 1;
 END;
 $$;
+
+--authority
+INSERT INTO public.authority (id, password)
+VALUES ('admin', 'admin');
