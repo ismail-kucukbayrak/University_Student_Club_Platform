@@ -114,7 +114,9 @@ PostgreSQL functions handle all core operations such as adding clubs, joining cl
 
 ### 1. Database
 
-Install PostgreSQL and run:
+Install PostgreSQL and create a database (e.g. `clubdb`).
+
+Then run:
 
 ```
 \i database.sql
@@ -122,7 +124,27 @@ Install PostgreSQL and run:
 
 ---
 
-### 2. Backend
+### 2. Backend Configuration
+
+Before running the backend, update the database connection settings:
+
+```
+backend/src/main/resources/application.properties
+```
+
+Edit the following fields according to your local PostgreSQL setup:
+
+```
+spring.datasource.url=jdbc:postgresql://localhost:5432/clubdb
+spring.datasource.username=YOUR_DB_USERNAME
+spring.datasource.password=YOUR_DB_PASSWORD
+```
+
+> ⚠️ You must replace `username` and `password` with your own PostgreSQL credentials.
+
+---
+
+### 3. Backend
 
 ```
 cd backend
@@ -136,7 +158,7 @@ http://localhost:8080
 
 ---
 
-### 3. Frontend
+### 4. Frontend
 
 Open:
 
@@ -145,8 +167,6 @@ frontend/index.html
 ```
 
 > Make sure the backend is running before using the frontend.
-
----
 
 ## 🔗 API
 
