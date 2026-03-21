@@ -1,5 +1,11 @@
 # 🎓 University Student Club Platform
 
+![Java](https://img.shields.io/badge/Java-SpringBoot-green)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![REST API](https://img.shields.io/badge/API-REST-orange)
+![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
 A full-stack web application for managing university student clubs.  
 Students can join clubs, view announcements, and manage their memberships, while authorities (admins) can manage clubs, students, and announcements.
 
