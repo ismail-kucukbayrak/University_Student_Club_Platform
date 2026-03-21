@@ -202,9 +202,3 @@ http://localhost:8080/api
 - Search & filtering
 - Pagination
 - Docker support
-
----
-
-## 👤 Author
-
-University project
